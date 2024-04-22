@@ -13,7 +13,7 @@
 #include <stdio.h>
 #include <fcntl.h>
 #include <stdlib.h>
-#include <malloc.h>
+//#include <malloc.h>
 #include <string.h>
 
 // Begin required for SHA1
@@ -67,6 +67,8 @@ typedef struct {
 	INT64 numBytes;
 	int errorsFound;
 } fileRecord;
+
+int beStepOver(BYTE* benstr,int benstrLen,int benstrOffset);
 
 // Extracts the integer
 // Returns the new offset into the input,
